@@ -1,0 +1,97 @@
+% TABLE Definition of Indices  
+% Version 0.0
+%\documentstyle[apjpt4]{article}   
+%\begin{document}
+
+\def\h{\hskip -3 mm}
+\def\j{\hskip -1 mm}
+\def\k{\hskip -6 mm}
+\def\l{\hskip -4 mm}
+\def\ha{\hskip -3 mm}
+\def\hb{\hskip -5 mm}
+\def\hc{\hskip -3 mm}
+\def\hd{\hskip -3 mm}
+\def\nd{\nodata}
+\def\sm{$\setminus$}
+%Song Huang's definition 
+\newcommand\abs[1]{\left\lvert #1 \right\rvert}
+\def\galfit{{\tt GALFIT}}
+\def\ser{{S\'{e}rsic\ }}
+\def\mstar{$M_{\ast}$}
+\def\sigstar{$\sigma_{\ast}$}
+\def\m2l{$M_{\ast}/L_{\ast}$}
+\def\nai{{\tt NaI}}
+\def\feh{{\tt FeH}}
+\def\tio{{\tt TiO}}
+\def\cah{{\tt CaH}}
+\def\tiO2{{\tt TiO}_{\rm 2}}
+
+\pagestyle{empty} 
+%\ptlandscape
+\begin{deluxetable}{ccccccc}
+\tabletypesize{\scriptsize}
+\textheight=10.2in
+\tablewidth{0pt}
+%\voffset=-1.2in
+%\hoffset=-0.5in
+\tablecolumns{10}
+%\tablewidth{9.5in}
+\tablenum{1}
+\tablecaption{Wavelength Definitions of Spectral Indices}
+
+%%%%%%%%%%%%%%%% Table Head %%%%%%%%%%%%%%%%%%%%%
+
+\tablehead{
+    \colhead{Feature} & 
+    \colhead{Name} &
+    \colhead{Feature Window} &
+    \colhead{Blue Pseudo-continuum} &
+    \colhead{Red Pseudo-continuum} &
+    \colhead{Unit} &
+    \colhead{Reference}
+    \nl 
+    \colhead{} & 
+    \colhead{} & 
+    \colhead{($\AA$)} & 
+    \colhead{($\AA$)} & 
+    \colhead{($\AA$)} & 
+    \colhead{} & 
+    \colhead{} 
+    \nl
+    \colhead{    (1)} &
+    \colhead{    (2)} &
+    \colhead{    (3)} &
+    \colhead{    (4)} &
+    \colhead{    (5)} &
+    \colhead{    (6)} &
+    \colhead{    (7)}
+}
+
+\startdata
+
+TiO & {\tt LB\_TiO2}    & 6189.625-6272.125 & 6066.625-6141.625 & 6422.000-6455.000 & mag; \AA & LB13 \\
+NaI  & {\tt LB\_NaI8190} & 8180.000-8200.000 & 8143.000-8153.000 & 8233.000-8244.000 & \AA & LB13 \\
+TiO & {\tt SP\_bTiO}    & 4758.500-4800.000 & 4742.750-4756.500 & 4827.875-4847.875 & mag; \AA & SP13 \\
+TiO & {\tt SP\_aTiO}    & 5445.000-5600.000 & 5420.000-5442.000 & 5630.000-5655.000 & mag; \AA & SP13 \\
+CaH & {\tt SP\_CaH1}    & 6357.500-6401.750 & 6342.125-6356.500 & 6408.500-6429.750 & mag; \AA & SP13 \\
+CaH & {\tt SP\_CaH2}    & 6775.000-6900.000 & 6510.000-6539.250 & 7017.000-7064.000 & mag; \AA & SP13 \\
+TiO \& CaH & {\tt TiO\_CaH} & 6600.000-6817.000 & 6520.000-6545.000 & 7035.000-7050.000 & mag; \AA & Chen \\ 
+TiO & {\tt Chen\_TiO3}   & 6600.000-6723.000 & 6520.000-6545.000 & 7035.000-7050.000 & mag; \AA & Chen \\  
+CaH & {\tt Chen\_CaH}    & 6775.000-6817.000 & 6520.000-6545.000 & 7035.000 7050.000 & mag; \AA & Chen \\  
+
+\enddata
+
+%% General table comment marker
+\tablecomments{Wavelength definitions of spectra indices used in this work.    
+Col.   (1) Name of the spectra feature.
+Col.   (2) Name of the index used in here. 
+Col.   (3) Wavelength window forthe cetrnal feature.
+Col.   (4)-(5) Blue and Red pseudo-continuum windows.
+Col.   (6) Unit of the index. 
+Col.   (7) Reference for original definition. LB13: La~Barbera\etal (2013); 
+           SP13: Spiniello\etal (2013); Chen: Chen Ph.D. Thesis. 
+}
+
+%% No \tablerefs indicated
+\end{deluxetable}
+%\end{document}
